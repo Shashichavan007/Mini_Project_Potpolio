@@ -1,0 +1,787 @@
+@font-face {
+    font-family: pop;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: pop-sb;
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: pop-blk;
+    src: url(fonts/Poppins-Black.ttf);
+}
+
+:root{
+    --main-color : #f09c09;
+    --secCol : #d2d2d2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: pop;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bg-shapes{
+    background-image: url(imgs/bg-img-vector2.svg);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+#click{display: none;}
+
+.dsk-ico{
+    float: left;
+    display: block;
+    background-color: white;
+    height: 95px;
+    align-items: center;
+    padding: 0px 0px 0px 80px;
+}
+
+.dsk-ico img{
+    margin-top: 26px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+nav{
+    height: 95px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px 0px 10px;
+}
+
+nav .menu-btn{
+    border-radius: 50px;
+}
+
+nav .logo{
+    font-size: 1.8vw;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+nav .pgbg{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0px 8px;
+}
+
+nav ul li a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 7px;
+    transition: 0.6s ease;
+}
+
+nav ul li a:hover,nav ul li a.active{
+    color: white;
+    background-color: var(--main-color);
+}
+
+/* WELCOME PART START HERE */
+
+.welcome{
+    justify-content: space-between;
+    display: flex;
+}
+
+.welcome-text{
+    height: 100%;
+    float: left;
+    width: 50%;
+    display: block;
+    padding: 50px 0px 0px 105px;
+}
+
+.intro{
+    font-family: pop-sb;
+    font-size: 35px;
+    line-height: 1.3;
+    color: var(--main-color);
+    
+}
+
+.name{
+    font-family: pop-blk;
+    font-size: 8vw;
+    line-height: 0.9;
+    margin-left: -6px;
+    
+}
+
+.role{
+    margin-top: 2px;
+    font-family: pop-sb;
+    font-size: 38px;
+    color: var(--main-color);
+}
+
+#role-text-color{
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.greetings{
+    padding: 30px 23px 0px 0px;
+    font-family: pop-sb;
+    font-size: 1.35vw;
+}
+
+.lgs-btn{
+    border-style: none;
+    margin-top: 6%;
+    border-radius: 50px;
+    font-size: 2vw;
+    font-family: pop-sb;
+    padding: 10px 8vw;
+    color: white;
+    background-color: var(--main-color);
+}
+
+.welcome-vector{
+    padding: 40px 40px 0px 0px;
+    width: 35%;
+    height: 75%;
+    align-self: center;
+    float: left;
+    display: block;
+}
+
+/* EXP & EDU PART START HERE */
+
+.container-exp-edu{
+
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 5vw 50px 30px 50px;
+}
+
+.exp-div{
+    width: 49%;
+    padding-left: 60px;
+    padding-right: 30px;
+}
+
+.exp-head{
+    font-family: pop-sb;
+    font-size: 3vw;
+    color: var(--main-color);
+    width: 100%;
+    padding: 10px 0px 2vw 0px;
+    letter-spacing: 1px;
+}
+
+.exp-div h2{
+    font-size: 1.8vw;
+    padding: 20px 0px 10px 0px;
+}
+
+.exp-div h3{
+    font-size: 1.30vw;
+    padding-bottom: 5px;
+    color: rgba(0, 0, 0, 0.643);
+}
+
+.exp-div p{
+    font-size: 1.34vw;
+}
+
+.edu-div{
+    width: 49%;
+    padding-left: 54px;
+    padding-right: 20px;
+}
+
+.edu-head{
+    font-family: pop-sb;
+    font-size: 3vw;
+    color: var(--main-color);
+    width: 100%;
+    padding: 10px 0px 2vw 0px;
+    letter-spacing: 1px;
+}
+
+.edu-div h2{
+    font-size: 1.8vw;
+    padding: 20px 0px 10px 0px;
+}
+
+.edu-div h3{
+    font-size: 1.30vw;
+    padding-bottom: 5px;
+    color: rgba(0, 0, 0, 0.643);
+}
+
+.edu-div p{
+    font-size: 1.34vw;
+}
+
+/* SKILL & PROJECTS PART START HERE */
+
+.skillsDiv{
+    width: 100%;
+    padding: 60px 50px 20px 100px;
+}
+
+.sd1{
+    padding-left: 4px;
+    padding-bottom: 20px;
+}
+
+.sd2{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.barsBox,.roundBox,.storeBox{
+    width: 30%;
+}
+
+.progBox{
+    width: 100%;
+    padding-bottom: 4vh;
+}
+
+.progName{
+    font-size: 1.5vw;
+    font-weight: 500;
+    justify-content: space-between;
+    width: 100%;
+    display: inline-flex;
+    padding: 0 10px 6px 10px;
+}
+
+
+.progBar{
+    width: 100%;
+    height: 20px;
+    background-color: #d2d2d2;
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progBar::before{
+    content: "";
+    position: absolute;
+    width: calc(var(--prog) * 1%);
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: 100px;
+}
+
+.roundBox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    grid-template-rows: auto;
+    grid-row-gap: 25px;
+}
+
+div[role="roundPBar"] {
+    width: 85%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    position: relative;
+    border-radius: 50%;
+}
+
+div[role="roundPBar"]::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(var(--main-color) calc(var(--prog)*1%),var(--secCol) 0);
+    mask:radial-gradient(white 52%,transparent 0);
+    mask-mode: alpha;
+    -webkit-mask:radial-gradient(#0000 52%,#000 0);
+    -webkit-mask-mode: alpha;
+}
+
+div[role="roundPBar"] img{
+    width: 30%;
+    aspect-ratio: 1;
+    border-radius: 25%;
+}
+
+.storeBox{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 5%;
+    color: white;
+    text-align: center;
+    letter-spacing: 1pt;
+    line-height: 20pt;
+}
+
+.storeBox p{
+    opacity: 70%;
+}
+
+.storeBox a{
+    width: 100%;
+}
+
+.storeBox button{
+    width: 70%;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1pt;
+    background-color: white;
+    color: var(--main-color);
+    border: none;
+    border-radius: 7px;
+    font-size: 1vw;
+}
+
+/* CONTACT PART START HERE */
+
+.ContactDiv{
+    width: 100%;
+    padding: 60px 60px 4vw 100px;
+}
+
+.cd2{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.AboutMe,.TextMe{
+    width: 48%;
+    padding-top: 1.8vw;
+}
+
+.AboutMe label{
+    font-size: 1.6vw;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 2.5vw;
+}
+
+.AboutMe label img{
+    width: 2.5vw;
+    margin-right: 20px;
+}
+
+.TextMe input,textarea{ 
+    font-size: 1.3vw;
+    padding: 15px 25px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    background-color: transparent;
+    width: 90%;
+}
+
+.btn-hld2{
+    margin-top: 1.2vw;
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.btn-hld2 div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+.clear-btn{
+    font-size: 1.3vw;
+    border: 3px solid var(--main-color);
+    margin-left: 12px;
+    padding: 10px 40px;
+    border-radius: 100px;
+    color: var(--main-color);
+    background-color: transparent;
+}
+
+.clear-btn:hover{
+    background-color: var(--secCol);
+}
+
+.send-btn:hover{
+    background-color: #19975d;
+}
+
+.send-btn{
+    font-size: 1.3vw;
+    border: none;
+    margin-left: 12px;
+    padding: 10px 40px;
+    border-radius: 100px;
+    color: white ;
+    background-color: var(--main-color);
+}
+
+#status{
+    color: var(--main-color);
+}
+
+/* FOOTER PART STARTS HERE */
+
+footer{
+    height: 12vw;
+    width: 100%;
+    background-color: var(--main-color);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 2vw 0 2vw 0;
+}
+
+footer h2{
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+footer div{
+    padding: 0px;
+    width: 20%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+footer img{
+    width: 2.5vw;
+}
+
+footer p{
+    word-spacing: 3px;
+}
+
+/*---------------------------------------MOBILE DEVICE CUSTOMIZATION-----------------------------------*/
+
+@media (max-width: 940px) {
+
+    .bg-shapes{
+       background-size: 100%;
+       background-repeat: repeat;
+    }
+
+    .dsk-ico{
+        display: none;
+    }
+
+    .navbar{
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+    }
+
+    nav{
+        margin-left: 0%;
+        padding: 0px 40px 0px 40px;
+    }
+    
+    nav .logo{
+        font-size: 25px;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 95px;
+        left: -100%;
+        background: #0a7141;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    #click:checked ~ ul{
+
+        left: 0%;
+    } 
+
+    nav ul li{
+
+        margin: 46px 0px;
+        padding: 0px 100px;
+    }
+
+    nav ul li a{
+
+        font-size: 20px;
+        color: white;
+        display: block;
+    }
+
+    nav ul li a:hover,nav ul li a.active{
+
+        color: #0a7141;
+        background: white;
+    }
+
+    nav .pgbg{
+        display: block;
+        width: 45px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    /* WELCOME PART START HERE */
+
+    .welcome{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 95px;
+    }
+    .welcome-text{
+        order: 2;
+        width: 100%;
+        padding: 0px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro{
+        
+        text-align: center;
+        font-size: 6vw;
+    }
+    
+    .name{
+        
+        text-align: center;
+        font-size: 17vw;
+    }
+    
+    .role{
+       
+       text-align: center;
+       font-size: 6.5vw;
+    }
+    
+    .greetings{
+        padding: 0px 25px;
+        margin-top: 20px;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .lgs-btn{
+        font-size: 3.7vw;
+    }
+
+    .welcome-vector{
+        order: 1;
+        width: 100%;
+        padding: 15px 40px;
+    }
+
+    /* EXP and EDU Part Start From Here */
+
+    .container-exp-edu{
+        display: block;
+        padding: 0 30px 0px 45px;
+    }
+
+    .exp-div{
+        width: 100%;
+        padding: 17vw 10px 0px 0px;
+    }
+
+    .exp-head{
+        font-family: pop-sb;
+        font-size: 7vw;
+    }
+    
+    .exp-div h2{
+        font-size: 4vw;
+    }
+    
+    .exp-div h3{
+        font-size: 3vw;
+    }
+    
+    .exp-div p{
+        font-size: 3vw;
+    }
+
+    .edu-div{
+        width: 100%;
+        padding: 90px 10px 0px 0px;
+    }
+
+    .edu-head{
+        font-size: 7vw;
+        width: 100%;
+    }
+    
+    .edu-div h2{
+        font-size: 4vw;
+        
+    }
+    
+    .edu-div h3{
+        font-size: 3vw;
+    }
+    
+    .edu-div p{
+        font-size: 3vw;
+    }
+
+/* ------------  Skills and Proj---------------- */
+
+    .skillsDiv{
+        display: block;
+        padding: 80px 30px 0px 45px;
+    }
+
+    .sd1{
+        padding: 0;
+    }
+    .sd2{
+        display: block;
+    }
+    
+    .barsBox,.roundBox,.storeBox{
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .progName{
+        font-size: 3.1vw;
+    }
+
+    .storeBox{
+        margin-top: 10vw;
+        border-radius: 20px;
+        padding: 30pt;
+    }
+
+    .storeBox h1{
+        font-size: 7vw;
+        padding-bottom: 7vw;
+    }
+
+    .storeBox p{
+        padding-bottom: 7vw;
+    }
+
+    .storeBox button{
+        font-size: 3vw;
+    }
+
+    /* -----------------contact part starts here ---------------*/
+
+    .ContactDiv{
+        display: block;
+        padding: 80px 30px 0px 45px;
+    }
+
+    .cd1{
+        padding-bottom: 3vw;
+    }
+
+    .cd2{
+        display: block;
+    }
+
+    .AboutMe{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3vw;
+    }
+
+    .AboutMe label{
+        font-size: 3.1vw;
+    }
+    
+    .AboutMe label img{
+        width: 3.5vw;
+        margin-right: 15px;
+    }
+
+    .TextMe{
+        width: 100%;
+    }
+
+    .TextMe input,textarea{ 
+        font-size: 3vw;
+        width: 100%;
+    }
+    
+    .btn-hld2{
+        margin-top: 3vw;
+        width: 100%;
+    }
+
+    .btn-hld2 div{
+        width: 50%;
+        font-size: 3vw;
+    }
+    
+    .clear-btn{
+        font-size: 3vw;
+    }
+    
+    .send-btn{
+        font-size: 3vw;
+    }
+
+    footer{
+        margin-top: 10vw;
+        height: 30vw;
+        padding: 4vw 0;
+    }
+    footer h2{
+        letter-spacing: 1px;
+        font-weight: 100;
+        font-size: 5vw;
+    }
+    
+    footer div{
+        padding: 0px;
+        width: 30%;
+    }
+    
+    footer img{
+        width: 5vw;
+    }
+    
+    footer p{
+        word-spacing: 3px;
+        font-size: 2.5vw;
+    }
+}
